@@ -148,8 +148,8 @@ const hwPerson = {
     // shakes is a list of objects(I think they are called objects, but name value pairs works too)
 
 function favFoodDishes(foods){
-    for (const food in foods) {
-        const value = foods[food]
+    for (let food in foods) {
+        let value = foods[food]
 
         if (Array.isArray(value)) {
             console.log(`${food} contains:`)
@@ -170,6 +170,7 @@ function favFoodDishes(foods){
 }
 console.log(favFoodDishes(hwPerson))
 
+console.log('============================================')
 
 // console.log(JSON.stringify(hwPerson, null, 1))
 
@@ -193,7 +194,7 @@ function checkLength (astring){
         
     })
 }
-//console.log(checkLength('Zeke'))
+console.log(checkLength('Zeke'))
 
 console.log('After promise')
 
