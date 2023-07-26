@@ -148,8 +148,8 @@ const hwPerson = {
     // shakes is a list of objects(I think they are called objects, but name value pairs works too)
 
 function favFoodDishes(foods){
-    for (let food of foods) {
-        let value = foods[food]
+    for (const food in foods) {
+        const value = foods[food]
 
         if (Array.isArray(value)) {
             console.log(`${food} contains:`)
@@ -163,7 +163,7 @@ function favFoodDishes(foods){
          
         else {
             console.log(`${food} contains:`)
-            consolelog(`${value}`)
+            console.log(`${value}`)
          }
 
         }
@@ -171,7 +171,7 @@ function favFoodDishes(foods){
 console.log(favFoodDishes(hwPerson))
 
 
-    // console.log(JSON.stringify(hwPerson, null, 1))
+// console.log(JSON.stringify(hwPerson, null, 1))
 
        
 
