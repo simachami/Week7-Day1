@@ -147,18 +147,31 @@ const hwPerson = {
     // tacos and burgers are just strings
     // shakes is a list of objects(I think they are called objects, but name value pairs works too)
 
-    // function favFoodDishes(){}
-    // for (let food of hwPerson) {
-    //     let value = hwPerson[food]
-    //     if (Array.isArray(value)){
-    //         console.log(`${food} contains:`)
-    //         value.forEach((item)=> console.log(`${item}`))
-    //     } else if (typeof value === 'object' && value !== null){
-        //     console.log(`${food} contains:`)
-        //  }
+function favFoodDishes(foods){
+    for (let food of foods) {
+        let value = foods[food]
+
+        if (Array.isArray(value)) {
+            console.log(`${food} contains:`)
+            value.forEach((item)=> console.log(`${item}`))
+        } else if (typeof value === 'object' && value !== null){
+            console.log(`${food} contains:`)
+            for (const key in value){
+                console.log(`${key}: ${values[key]}`)
+             }
+         }
+         
+        else {
+            console.log(`${food} contains:`)
+            consolelog(`${value}`)
+         }
+
+        }
+}
+console.log(favFoodDishes(hwPerson))
 
 
-    console.log(JSON.stringify(hwPerson, null, 1))
+    // console.log(JSON.stringify(hwPerson, null, 1))
 
        
 
