@@ -135,7 +135,7 @@ const hwPerson = {
     }]
 }
 
-function favFoodDishes(){
+
     // Iterate over hwPerson
     // hwPerson is a const global object so you dont have to pass it in
         //if food is a string do something
@@ -147,16 +147,20 @@ function favFoodDishes(){
     // tacos and burgers are just strings
     // shakes is a list of objects(I think they are called objects, but name value pairs works too)
 
-//     for (let food of hwPerson) {
-//         let value = hwPerson[food]
-//         if (Array.isArray(value)){
-//             console.log(`${food} contains:`)
-//             value.forEach((item)=> console.log(`${item}`))
-//         } else if (typeof value === 'object')
+    // function favFoodDishes(){}
+    // for (let food of hwPerson) {
+    //     let value = hwPerson[food]
+    //     if (Array.isArray(value)){
+    //         console.log(`${food} contains:`)
+    //         value.forEach((item)=> console.log(`${item}`))
+    //     } else if (typeof value === 'object' && value !== null){
+        //     console.log(`${food} contains:`)
+        //  }
 
-//     }
+
+    console.log(JSON.stringify(hwPerson, null, 1))
+
        
-// }
 
 
 // Question 3:
