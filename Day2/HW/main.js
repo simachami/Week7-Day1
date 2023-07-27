@@ -157,7 +157,7 @@ function favFoodDishes(foods){
         } else if (value instanceof Object){
             console.log(`${food} contains:`)
             for (const key in value){
-                console.log(`${key}: ${values[key]}`)
+                console.log(`${key}: ${value[key]}`)
              }
          }
          
