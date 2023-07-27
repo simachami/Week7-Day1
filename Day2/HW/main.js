@@ -188,9 +188,8 @@ console.log('============================================')
 function checkLength (astring){
     return new Promise((resolve, reject) => {
         if (astring.length > 10){
-            setInterval(()=>resolve(true), 3000)
-            console.log('Big word')
-        }else reject(false), console.log('small string')
+            setInterval(()=>resolve(true, console.log('Big word')), 3000)
+        }else reject(false, console.log('small string'))
         
     })
 }
@@ -274,6 +273,7 @@ dealer.hit()
 player.hit()
 console.log('Dealers hand after hit:' , dealer.hand)
 console.log('players hand after hit:', player.hand)
+
 
 
 
