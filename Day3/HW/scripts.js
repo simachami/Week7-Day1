@@ -3,8 +3,8 @@ const button = document.createElement('button')
 
 colorMode()
 function colorMode() {
-    body.style.backgroundColor = 'lightgray'
-    body.style.color = 'black'
+    body.style.backgroundColor = '#E4D6A7'
+    body.style.color = '#9B2915'
     
 }
 const todoForm = document.getElementById('todo-form')
@@ -22,8 +22,6 @@ todoContainer.className = 'todo-container'
 todoContainer.style.flexWarp = 'wrap'
 todoContainer.style.display = 'flex'
 todoContainer.style.button = '10px'
-
-
 
 
 function itemData(){

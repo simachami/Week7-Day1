@@ -7,12 +7,12 @@
     height: 30px;
     font-size: 16px;
     cursor: pointer;
-    background-color: black;
+    background-color: #1C110A;
     color: white;
 }
 
 .my-button:hover {
-    background-color: gray;
+    background-color: #50A2A7;
 }
 
 .my-title{
@@ -43,7 +43,7 @@ p {
 
 .todo-item.done {
     text-decoration: line-through;
-    color: red;
+    color: #1C110A;
 }
 
 label{
