@@ -25,7 +25,7 @@ driverStandings.forEach(driver => {
     `<td>${driver.position}</td>
     <td>${driver.Driver.givenName} ${driver.Driver.familyName}</td>
     <td>${driver.Constructors[0].name}</td>
-    <td>${driver.points}</td> `;
+    <td>${driver.points}</td> `
 
     tableBody.appendChild(row)
 })
